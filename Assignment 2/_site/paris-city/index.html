@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="has-background-white" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>(Whether) Weather</title>
+	<link
+	rel="icon"
+	type="image/png"
+	sizes="32x32"
+	href="/images/logo-fav.png" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css" />
+	<link rel="stylesheet" href="css/switch.css" />
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+
+			const $navbarBurgers = Array.prototype.slice.call(
+				document.querySelectorAll(".navbar-burger"),
+				0
+				)
+
+			$navbarBurgers.forEach((el) => {
+				el.addEventListener("click", () => {
+					const target = el.dataset.target
+					const $target = document.getElementById(target)
+
+					el.classList.toggle("is-active")
+					$target.classList.toggle("is-active")
+				})
+			})
+		})
+	</script>
+</head>
+
+<body>
+	  <nav class="navbar has-background-white">
+  <div class="navbar-brand">
+  <a class="navbar-item" href="/"> <img src="/images/logonav.png"  alt="Logo" /> </a>
+  <span class="navbar-burger has-background-white" data-target="navbarMenu" aria-expanded="false">
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  </span>
+  </div>
+  <div id="navbarMenu" class="navbar-menu">
+  <div class="navbar-end has-background-white">
+  <a href="/index" class="navbar-item has-text-grey-darker is-active has-background-info">
+  Dashboard
+  </a>
+  <a href="/livecamera" class="navbar-item has-text-grey-darker">
+  Live Cams
+  </a>
+  <a href="/settings" class="navbar-item has-text-grey-darker">
+  Settings
+  </a>
+  </div>
+  </div>
+  </nav>
+	<main class="columns is-multiline box has-background-grey is-vcentered">
+		<header class="column is-12 has-text-centered has-text-white">
+<p id="page-heading" class="is-size-1">Paris</p>
+</header> 
+		
+<div class="columns">
+    <div class="column is-4 is-offset-4">
+      <section class="card">
+        <div class="card-image">
+          <figure class="image">
+            <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114" alt="Image">
+          </figure>
+        </div>
+      </section>
+    </div>
+</div>
+
+
+<div class="columns">
+    <div class="column is-2 is-offset-4">
+          <figure class="image is-256x256">
+            <img src="/images/partly-cloudy.png" alt="Image">
+          </figure>
+      </section>
+    </div>
+
+
+<div class="column is-4">
+          <section class="card has-text-centered">
+          <p class="card-header-title is-size-4 is-centered">
+            Right Now
+          </p>       
+        <div class="card-image">
+          <p class="card-header-title is-size-5 is-centered">
+             12° 
+          </p> 
+          <p class="card-header-title is-size-5 is-centered">
+           6km/h
+          </p>
+        </div>
+      </section>
+    </div>
+   
+
+
+<div class="column is-4">
+          <section class="card has-text-centered">
+          <p class="card-header-title is-size-4 is-centered">
+            Today
+          </p>       
+        <div class="card-image">
+          <p class="card-header-title is-size-5 is-centered">
+            Max Temp 15° 
+          </p> 
+          <p class="card-header-title is-size-5 is-centered">
+            Max Wind 7km/h
+          </p> 
+        </div>
+      </section>
+    </div>
+  
+</div>
+
+
+
+<div class="columns">
+    <div class="column">
+      <section class="card has-text-centered">
+          <p class="card-header-title is-size-4 is-centered">
+            Today
+          </p>       
+        <div class="card-image">
+          <figure class="image">
+            <img src="/images/partly-cloudy.png" alt="Image">
+          </figure>
+          <p class="card-header-title is-size-5 is-centered">
+            15° Partly Cloudy
+          </p> 
+        </div>
+      </section>
+    </div>
+
+    <div class="column">
+      <section class="card has-text-centered">
+          <p class="card-header-title is-size-4 is-centered">
+            Thursday
+          </p>       
+        <div class="card-image">
+          <figure class="image">
+            <img src="/images/rain.png" alt="Image">
+          </figure>
+          <p class="card-header-title is-size-5 is-centered">
+            14° Raining
+          </p> 
+        </div>
+      </section>
+    </div>
+
+    <div class="column">
+      <section class="card has-text-centered">
+          <p class="card-header-title is-size-4 is-centered">
+            Friday
+          </p>       
+        <div class="card-image">
+          <figure class="image">
+            <img src="/images/rain.png" alt="Image">
+          </figure>
+          <p class="card-header-title is-size-5 is-centered">
+            15° Raining
+          </p> 
+        </div>
+      </section>
+    </div>
+
+    <div class="column">
+      <section class="card has-text-centered">
+          <p class="card-header-title is-size-4 is-centered">
+            Saturday
+          </p>       
+        <div class="card-image">
+          <figure class="image">
+            <img src="/images/partly-cloudy.png" alt="Image">
+          </figure>
+          <p class="card-header-title is-size-5 is-centered">
+            12° Partly Cloudy
+          </p> 
+        </div>
+      </section>
+    </div>
+
+    <div class="column">
+      <section class="card has-text-centered">
+          <p class="card-header-title is-size-4 is-centered">
+            Sunday
+          </p>       
+        <div class="card-image">
+          <figure class="image">
+            <img src="/images/sun.png" alt="Image">
+          </figure>
+          <p class="card-header-title is-size-5 is-centered">
+            13° Sunny
+          </p> 
+        </div>
+      </section>
+    </div>
+
+    <div class="column">
+      <section class="card has-text-centered">
+          <p class="card-header-title is-size-4 is-centered">
+            Monday
+          </p>       
+        <div class="card-image">
+          <figure class="image">
+            <img src="/images/rain.png" alt="Image">
+          </figure>
+          <p class="card-header-title is-size-5 is-centered">
+            7° Raining
+          </p> 
+        </div>
+      </section>
+    </div>
+
+    <div class="column">
+      <section class="card has-text-centered">
+          <p class="card-header-title is-size-4 is-centered">
+            Tuesday
+          </p>       
+        <div class="card-image">
+          <figure class="image">
+            <img src="/images/rain.png" alt="Image">
+          </figure>
+          <p class="card-header-title is-size-5 is-centered">
+            8° Raining
+          </p> 
+        </div>
+      </section>
+    </div>
+
+
+
+    </div>
+
+  </main>
+	</main>
+	  <footer class="footer has-background-white has-text-black">
+    <div class="container">
+      <div class="content has-text-centered has-text-grey">
+        <p>
+          (Whether) it matters - check the Weather
+        </p>
+        </div>
+        <div class="content has-text-centered is-size-7 has-text-grey">
+        <p>
+          Contact us at : (Whether)Weather@weather.ie
+        </p>
+        <img class="image is-128x128 is-inline" src="/images/logo2.png" alt="whetherweather">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
