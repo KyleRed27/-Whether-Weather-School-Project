@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="has-background-white" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>(Whether) Weather</title>
+	<link
+	rel="icon"
+	type="image/png"
+	sizes="32x32"
+	href="/images/logo-outline-blue.png"
+	/>
+	<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css"
+	/>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+
+			const $navbarBurgers = Array.prototype.slice.call(
+				document.querySelectorAll(".navbar-burger"),
+				0
+				)
+
+			$navbarBurgers.forEach((el) => {
+				el.addEventListener("click", () => {
+					const target = el.dataset.target
+					const $target = document.getElementById(target)
+
+					el.classList.toggle("is-active")
+					$target.classList.toggle("is-active")
+				})
+			})
+		})
+	</script>
+</head>
+
+<body>
+	  <nav class="navbar has-background-white">
+  <div class="navbar-brand">
+  <a class="navbar-item" href="/">
+  <img src="/images/logo-black.png" alt="Logo" />
+  </a>
+  <span class="navbar-burger has-background-white" data-target="navbarMenu" aria-expanded="false">
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  <span aria-hidden="true"></span>
+  </span>
+  </div>
+  <div id="navbarMenu" class="navbar-menu">
+  <div class="navbar-end has-background-white">
+  <a href="/" class="navbar-item has-text-black is-active">
+  Home
+  </a>
+  <a href="/dashboard" class="navbar-item has-text-black">
+  Dashboard
+  </a>
+  <a href="/local-time" class="navbar-item has-text-black">
+  Live Cams
+  </a>
+  <a href="/settings" class="navbar-item has-text-black">
+  Settings
+  </a>
+  </div>
+  </div>
+  </nav>
+	<main class="columns is-multiline box has-background-grey is-vcentered">
+		<header class="column is-12 has-text-centered has-text-white">
+<p id="page-heading" class="is-size-1">Live Weather Cameras</p>
+</header> 
+		
+<div class="column is-4">
+<section class="card has-text-centered">
+    <header class="card-header">
+      <p class="card-header-title is-size-4 is-centered">
+        Tokyo
+      </p>
+      </section>
+  <figure class="image is-16by9">
+  <iframe
+    class="has-ratio"
+    width="640"
+    height="360"
+    src="https://www.youtube.com/embed/tujkoXI8rWM"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
+</figure>
+</div>
+	</main>
+	  <footer class="footer has-background-white has-text-black">
+    <div class="container">
+      <div class="content has-text-centered has-text-grey">
+        <p>
+          <img class="image is-32x32 is-inline" src="/images/logo-black.png" alt="whetherweather">  (Whether) it matters - check the Weather
+        </p>
+        </div>
+        <div class="content has-text-centered is-size-7 has-text-grey">
+        <p>
+          Contact us at : (Whether)Weather@weather.ie
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
