@@ -1,6 +1,6 @@
 # (Whether) Weather
 
-A web client for our waether hosting website. 
+A web client for our weather hosting website. 
 
 ## Summary
 
@@ -25,8 +25,7 @@ Navigate to [http://localhost:8080](http://localhost:8080) to see the site.
 
 ### Netlify
 
-The site will be deployed from Netlify with Github at whether-weather-school-project.netlify.app
-
+The site is deployed from Netlify with Github at (https://whether-weather-school-project.netlify.app/)
 
 ### Technologies
 
@@ -37,3 +36,4 @@ The site will be deployed from Netlify with Github at whether-weather-school-pro
 
 ** All images from Unsplash (https://unsplash.com/)
 ** All icons from Flaticon (https://flaticon.com/)
+
