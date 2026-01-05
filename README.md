@@ -35,3 +35,5 @@ The site will be deployed from Netlify with Github at whether-weather-school-pro
 * [Netlify](https://netlify.com/)
 * [Github](https://github.com/)
 
+** All images from Unsplash (https://unsplash.com/)
+** All icons from Flaticon (https://flaticon.com/)
