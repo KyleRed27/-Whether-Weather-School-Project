@@ -25,7 +25,7 @@ Navigate to [http://localhost:8080](http://localhost:8080) to see the site.
 
 ### Netlify
 
-The site will be deployed from Netlify with Github at -whether-weather-school-project.netlify.app
+The site will be deployed from Netlify with Github at whether-weather-school-project.netlify.app
 
 
 ### Technologies
@@ -34,4 +34,5 @@ The site will be deployed from Netlify with Github at -whether-weather-school-pr
 * [Bulma](https://bulma.io/)
 * [Netlify](https://netlify.com/)
 * [Github](https://github.com/)
+
 
